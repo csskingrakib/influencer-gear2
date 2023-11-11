@@ -273,7 +273,10 @@ nav{
         .feature-container{
             flex-direction:column;
         }
-        .
+        .logo-section{
+            width:90%;
+            height:2vh;
+        }
     }
         
     
