@@ -1,0 +1,290 @@
+
+/* common styles */
+
+*{
+    font-family:'Poppins', 'sans-serif';
+    /* margin:0;
+    padding:0; */
+}
+
+
+.btn{
+    color:#FFFFFF;
+    border-radius: 41px;
+    background: #E02C6D;
+    padding: 10px 24px;
+    border:0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    gap:300px;
+}
+
+.menu ul{
+    display: flex;
+    gap:25px;
+    align-items: center;
+}
+.menu ul li{
+    list-style-type: none;
+}
+
+
+/*-------------------------------
+        FIRST CONTAINER styles
+ --------------------------------*/
+
+ .first-container{
+        display: flex;
+        width:100%;
+ }
+ .half-width{
+    margin: 20px 90px;
+    width:50%;
+ }
+
+ .cover-title{
+    color: #3A3A3A;
+    font-size: 52px;
+    width: 582px;
+    height: 133px;
+ }
+
+ .cover-description{
+    color: #3A3A3A;
+    font-size: 16px;
+ }
+
+ .half-width img{
+    width: 440px;
+    height: 414px;
+ }
+
+ 
+/* -------------------------------
+        LOGO SECTION styles
+---------------------------------- */
+
+.logo-section{
+    width:100%;
+    height: auto;
+    display:flex;
+    gap:40px;
+    justify-content:center;
+    background: #FFF;
+    padding-top:40px;
+}
+
+/* --------------------------------
+        collection-section      
+------------------------------------- */
+.caption{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 80px;
+}
+.collection{
+    width: 329px;
+    height: 476px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    margin-left: 30px;
+}
+.collection img{
+    width: 300px;
+    height: 256px;
+    justify-content: center;
+    padding-left:14.5px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.collection-title{
+    color:#18191F;
+    font-family: 'Poppins';
+    font-size:28px;
+    padding-left:14.5px;
+    margin: 0;
+}
+
+.collection-price{
+    font-size: 24px;
+    font-weight: 400;
+    padding-left:14.5px;
+    margin:0;
+    padding-bottom: 15px;
+}
+.collection-description{
+    color:#787885;  
+    font-size: 14px;
+    font-weight: 700;
+    padding-left:14.5px;
+    margin:0;
+}
+
+
+.first-star{
+    padding-left: 14.5px;
+    margin: 0;
+}
+
+
+
+.popular-section{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+    justify-items: center;
+    margin: 0 100px;
+}
+
+/* ---------------------------------------
+        FEATURE SECTION styles      
+------------------------------------------ */
+
+.feature-container{
+    display: flex;
+    justify-content: center;
+    gap:140px;
+    width:100%;
+    margin-bottom: 90px;
+    /* margin:50px 100px; */
+}
+
+.img-section img{
+    width: 404px;
+    height: 270px;
+}
+
+.description-section{
+    width: 610px;
+    height: 224px;
+}
+
+.feature-title{
+    color: #0A0826;
+    font-size: 38px;
+    font-weight: 700;
+    
+}
+
+.feature-description{
+    color: #6C6C6C;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 700;
+}
+.feature-btn{
+    background: #E02C6D;
+    color:white;
+    padding: 10px 20px;
+    font-size:16px;
+    border-radius: 5px;
+}
+
+
+
+/* --------------------------
+     FOOTER SECTION style
+   ------------------------ */
+
+   footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color:#FFF;
+   }
+
+   .social-account{
+     display: flex;
+     gap:10px;
+
+   }
+
+   .footer-title{
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 60px;
+
+   }
+
+   .footer-descripiton{
+    font-size: 14px;
+    font-weight: 700;
+  
+   }
+
+   .social-account{
+    padding-bottom:45px;
+   }
+
+   .logo-section,  ,footer {
+    display: none;
+   }
+
+
+
+
+
+
+
+
+   /* ---------------------------------------
+            MAKE RESPONSIVE styles
+    ----------------------------------------- */
+
+    /* for mobile responsive */
+
+    @media (max-width:576px) {
+        .first-container{
+            flex-direction:column-reverse;
+        }
+        .img-section img{
+            width:202px;
+            height:190px;
+            justify-content: center;
+        }
+        .cover-title{
+            display:flex;
+            justify-content:center;
+            font-size:28px;
+            font-weight:700;
+        }
+        .first-container.cover-description{
+          width:100%;
+          text-align:center;
+          margin-left:150px;
+
+        }
+
+
+        .popular-section{
+            grid-template-columns: repeat(1, 1fr);
+
+        }
+
+        .feature-container{
+            flex-direction:column;
+        }
+        .
+    }
+        
+    
+
+    /* for tablet responsive */
+
+    @media (min-width:577px) and (max-width:992px) {
+
+
+        .popular-section{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+    }
